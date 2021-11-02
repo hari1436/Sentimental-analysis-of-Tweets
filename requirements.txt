@@ -35,5 +35,5 @@ tzlocal==2.1
 urllib3==1.25.10
 validators==0.18.1
 watchdog==0.10.3
-wordcloud=1.2.1
+wordcloud==1.2.1
 
