@@ -1,4 +1,4 @@
-# Topic based opinion minning of tweeets
+# Topic based opinion mining of tweeets
 Tech Stack : Python,Streamlit,Twitter api .
 
 
