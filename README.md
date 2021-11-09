@@ -1,6 +1,4 @@
 # Topic based opinion minning of tweeets
+Tech Stack : Python,Streamlit,Twitter api 
+The project is deployed on streamlit and it uses data from twitter api (Live data).The main aim of the project is to identify the sentiments/opinion of tweets of a particular topic .
 
-Sentiment analysis refers to identifying as well as classifying the sentiments that are expressed in the text source. Tweets are often useful in generating a vast amount of sentiment data upon analysis. These data are useful in understanding the opinion of the people about a variety of topics.
-
-
-The aim of the project is to analyze the sentiment of the tweets provided from the Sentiment140 dataset by developing a machine learning pipeline involving the use of three classifiers (Logistic Regression, Bernoulli Naive Bayes, and SVM)along with using Term Frequency- Inverse Document Frequency (TF-IDF). The performance of these classifiers is then evaluated using accuracy and F1 Scores.
