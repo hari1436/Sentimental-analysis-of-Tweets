@@ -57,8 +57,8 @@ def main():
 
     # Use the above credentials to authenticate the API.
 
-    auth = tweepy.OAuthHandler( st.secrets.consumer_key , st.secrets.consumer_secret )
-    auth.set_access_token( st.secrets.access_token , st.secrets.access_token_secret )
+    auth = tweepy.OAuthHandler( st.secrets["consumer_key"] , st.secrets["consumer_secret"] )
+    auth.set_access_token( st.secrets["access_token"] , st.secrets["access_token_secret"] )
     api = tweepy.API(auth)
     ################################################################
     
