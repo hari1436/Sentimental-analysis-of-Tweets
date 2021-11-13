@@ -31,8 +31,6 @@ import matplotlib.pyplot as plt
 import matplotlib
 matplotlib.use('Agg')
 import seaborn as sns
-from dotenv import load_dotenv
-import os
 #sns.set_style('darkgrid')
 
 
@@ -53,19 +51,14 @@ def main():
 	"""
     st.markdown(html_temp, unsafe_allow_html=True)
     st.subheader("ENTER THE TOPIC KEYWORD TO GET THE ANALYSIS ")
-    load_dotenv()
     ################# Twitter API Connection #######################
-    consumer_key = os.getenv("consumer_key")
-    consumer_secret = os.getenv("consumer_secret")
-    access_token = os.getenv("access_token")
-    access_token_secret = os.getenv("access_token_secret")
 
 
 
     # Use the above credentials to authenticate the API.
 
-    auth = tweepy.OAuthHandler( consumer_key , consumer_secret )
-    auth.set_access_token( access_token , access_token_secret )
+    auth = tweepy.OAuthHandler( st.secrets.db_credentials.consumer_key , st.secrets.db_credentials.consumer_secret )
+    auth.set_access_token( st.secrets.db_credentials.access_token , st.secrets.db_credentials.access_token_secret )
     api = tweepy.API(auth)
     ################################################################
     
