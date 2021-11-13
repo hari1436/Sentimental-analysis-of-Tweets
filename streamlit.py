@@ -31,6 +31,8 @@ import matplotlib.pyplot as plt
 import matplotlib
 matplotlib.use('Agg')
 import seaborn as sns
+from dotenv import load_dotenv
+import os
 #sns.set_style('darkgrid')
 
 
@@ -50,13 +52,13 @@ def main():
 	<div style="background-color:blue;"><p style="color:white;font-size:30px;padding:9px">TOPIC BASED OPINION MINING OF TWEETS</p></div>
 	"""
     st.markdown(html_temp, unsafe_allow_html=True)
-    st.subheader("ENTER THE TOPIC KEYWORD  ")
-
+    st.subheader("ENTER THE TOPIC KEYWORD TO GET THE ANALYSIS ")
+    load_dotenv()
     ################# Twitter API Connection #######################
-    consumer_key = "Enter Key Here"
-    consumer_secret = "Enter Key Here"
-    access_token = "Enter Key Here"
-    access_token_secret = "Enter Key Here"
+    consumer_key = os.getenv("consumer_key")
+    consumer_secret = os.getenv("consumer_secret")
+    access_token = os.getenv("access_token")
+    access_token_secret = os.getenv("access_token_secret")
 
 
 
