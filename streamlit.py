@@ -47,10 +47,10 @@ def main():
     #st.subheader("Select a topic which you'd like to get the sentiment analysis on :")
 
     html_temp = """
-	<div style="background-color:yellow;"><p style="color:blue;font-size:40px;padding:9px">TOPIC BASED OPINION MINNING OF TWEETS</p></div>
+	<div style="background-color:blue;"><p style="color:white;font-size:30px;padding:9px">TOPIC BASED OPINION MINING OF TWEETS</p></div>
 	"""
     st.markdown(html_temp, unsafe_allow_html=True)
-    st.subheader("ENTER THE TOPIC KEEYWORD TO GET THE OPINON ABOUT IT ")
+    st.subheader("ENTER THE TOPIC KEYWORD  ")
 
     ################# Twitter API Connection #######################
     consumer_key = "Enter Key Here"
